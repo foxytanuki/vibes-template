@@ -23,12 +23,12 @@ cd my-api && bun install && bun run dev
 - Tailwind CSS v4
 - shadcn/ui (config only, add components with `bunx shadcn@latest add button`)
 - Biome 2
-- TypeScript 5.7
+- TypeScript 5.9
 
 ### backend
 
 - Hono
 - Zod + @hono/zod-validator
 - Biome 2
-- TypeScript 5.7
+- TypeScript 5.9
 - Bun runtime
