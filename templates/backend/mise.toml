@@ -1,0 +1,19 @@
+[tools]
+bun = "1.3.8"
+node = "25.6.0"
+
+[tasks.setup]
+description = "Install deps and create .env from .env.example if missing"
+run = "cp -n .env.example .env 2>/dev/null || true && bun install"
+
+[tasks.dev]
+description = "Run backend dev server (wrapper around bun run dev)"
+run = "bun run dev"
+
+[tasks.db-up]
+description = "Start PostgreSQL via docker compose (wrapper around bun run db:up)"
+run = "bun run db:up"
+
+[tasks.db-down]
+description = "Stop PostgreSQL via docker compose (wrapper around bun run db:down)"
+run = "bun run db:down"
