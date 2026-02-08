@@ -5,7 +5,7 @@ Project templates monorepo.
 ## Usage
 
 ```bash
-# Frontend (Vite 8 + React + Tailwind v4 + shadcn + Biome)
+# Frontend (Vite 7 + React + Tailwind v4 + shadcn + Biome)
 bunx degit foxytanuki/vibes-template/templates/frontend my-app
 cd my-app && bun install && bun run dev
 
@@ -18,7 +18,7 @@ cd my-api && bun install && bun run dev
 
 ### frontend
 
-- Vite 8 beta (Rolldown)
+- Vite 7
 - React 19
 - Tailwind CSS v4
 - shadcn/ui (config only, add components with `bunx shadcn@latest add button`)
