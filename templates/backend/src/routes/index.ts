@@ -1,6 +1,6 @@
 import { zValidator } from "@hono/zod-validator";
 import { desc } from "drizzle-orm";
-import { Context, Hono } from "hono";
+import { type Context, Hono } from "hono";
 import { getDb } from "../db/client.js";
 import { messages } from "../db/schema.js";
 import { messageSchema } from "../schemas/index.js";
