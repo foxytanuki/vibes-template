@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome-check:
+      glob: "*.{js,ts,json}"
+      run: bunx --bun biome check --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
+    type-check:
+      run: bunx --bun tsc --noEmit
+
+pre-push:
+  commands:
+    test:
+      run: bun test

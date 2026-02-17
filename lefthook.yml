@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    frontend-biome:
+      root: "templates/frontend/"
+      glob: "*.{js,ts,jsx,tsx,json}"
+      run: bunx --bun biome check --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
+    backend-biome:
+      root: "templates/backend/"
+      glob: "*.{js,ts,json}"
+      run: bunx --bun biome check --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
