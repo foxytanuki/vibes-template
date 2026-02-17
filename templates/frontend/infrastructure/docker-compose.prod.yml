@@ -1,0 +1,9 @@
+services:
+  frontend:
+    # TODO: Replace with your GHCR image (e.g. ghcr.io/yourname/your-frontend:latest)
+    image: ghcr.io/<owner>/<app-name>:latest
+    restart: unless-stopped
+    ports:
+      - "${PORT:-80}:80"
+    labels:
+      - com.centurylinklabs.watchtower.enable=true

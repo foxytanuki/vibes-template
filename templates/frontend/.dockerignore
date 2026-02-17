@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.git
+.gitignore
+.direnv
+*.log
+*.tsbuildinfo
+lefthook.yml
+lefthook-local.yml
