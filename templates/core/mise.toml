@@ -1,0 +1,31 @@
+# mise.toml - Tool version management
+# https://mise.jdx.dev/
+
+[tools]
+# Uncomment and specify tools your project needs:
+# bun = "latest"
+# node = "lts"
+# python = "3.13"
+# go = "latest"
+# rust = "latest"
+# deno = "latest"
+
+[tasks.setup]
+description = "Initial project setup"
+# run = "..."
+
+[tasks.dev]
+description = "Start development server / process"
+# run = "..."
+
+[tasks.test]
+description = "Run tests"
+# run = "..."
+
+[tasks.lint]
+description = "Run linter"
+# run = "..."
+
+[tasks.build]
+description = "Build for production"
+# run = "..."

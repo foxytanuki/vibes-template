@@ -1,0 +1,14 @@
+# lefthook.yml - Git hooks configuration
+# https://lefthook.com/
+
+pre-commit:
+  parallel: true
+  commands:
+    # lint:
+    #   run: <your lint command> {staged_files}
+    #   stage_fixed: true
+
+pre-push:
+  commands:
+    # test:
+    #   run: <your test command>

@@ -1,0 +1,26 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# direnv
+.direnv/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# lefthook local overrides
+lefthook-local.yml
