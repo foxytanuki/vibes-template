@@ -1,3 +1,11 @@
+# Dependencies / build output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.turbo/
+
 # Environment
 .env
 .env.*
